@@ -7,7 +7,7 @@ export 'dart:html';
 export 'package:mockito/mockito.dart';
 export 'package:test/test.dart';
 
-export '../lib/environment.dart';
+export '../lib/user_environment.dart';
 
 class NavigatorMock extends Mock implements Navigator {
 }

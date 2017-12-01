@@ -5,7 +5,7 @@ Differentiated browsers are: `IE`, `Edge`, `Chrome`, `Safari`, `Firefox`, `Opera
 
 ### Usage
 ```dart
-  import 'package:user_environment/environment.dart';
+  import 'package:user_environment/user_environment.dart';
   void main() {
     UserEnvironment env = UserEnvironmentFactory();
     print([
