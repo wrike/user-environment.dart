@@ -3,7 +3,7 @@ sudo: false
 matrix:
   include:
     - dart: stable
-      #deprecated.with_content_shell: true
+      deprecated.with_content_shell: true
       before_install:
         - export DISPLAY=:99.0
         - sh -e /etc/init.d/xvfb start
