@@ -1,5 +1,5 @@
 name: user_environment
-version: 1.0.0
+version: 1.0.1
 description: 'User environment detection'
 homepage: http://www.github.com/wrike/user-environment.dart
 authors:
