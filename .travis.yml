@@ -2,18 +2,18 @@ language: dart
 sudo: false
 matrix:
   include:
-  - dart: dev
-    dart_task:
-    - test: --platform vm
-    - test: --platform dartium
-      install_dartium: true
-    - dartanalyzer: --strong --fatal-warnings
-  - dart: stable
-    dart_task:
-    - test: --platform vm
-    - test: --platform dartium
-      install_dartium: true
-    - dartanalyzer: --strong --fatal-warnings
+    - dart: dev
+      dart_task:
+      - test: --platform vm
+      - test: --platform dartium
+        install_dartium: true
+      - dartanalyzer: --strong --fatal-warnings
+    - dart: stable
+      dart_task:
+      - test: --platform vm
+      - test: --platform dartium
+        install_dartium: true
+      - dartanalyzer: --strong --fatal-warnings
 
 #branches:
 #  only: [master]
