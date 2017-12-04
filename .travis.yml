@@ -31,14 +31,20 @@ matrix:
       dart_task:
         analyzer: --strong --fatal-warnings
     - dart: stable
-      with_content_shell: true
-#      before_install:
-#        - export DISPLAY=:99.0
-#        - sh -e /etc/init.d/xvfb start
-#        - sleep 3
+      deprecated.with_content_shell: true
+      before_install:
+        - export DISPLAY=:99.0
+        - sh -e /etc/init.d/xvfb start
+        - sleep 3
       script:
         - pub run dart_dev coverage --no-html
         - bash <(curl -s https://codecov.io/bash) -f coverage/coverage.lcov
+
+branches:
+  only:
+  - gh-pages
+  - /.*/
+
 cache:
   directories:
     - $HOME/.pub-cache
