@@ -3,14 +3,17 @@ sudo: false
 dart:
   - dev
 dart_task:
-  - test: --platform vm
-  - test: --platform dartium
-  install_dartium: true
-  - dartanalyzer: --strong --fatal-warnings
-  #- dartfmt
+- test: --platform vm
+- test: --platform dartium
+install_dartium: true
+- analyzer: --strong --fatal-warnings
+#- dartfmt
 
-#branches:
-#  only: [master]
+branches:
+  only:
+  - gh-pages
+  - /.*/
+
 cache:
   directories:
     - $HOME/.pub-cache
