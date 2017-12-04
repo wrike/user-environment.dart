@@ -18,7 +18,6 @@ dev_dependencies:
   test: ^0.12.24+1
   dart_dev: any
   dart_style: any
-  coverage: any
 
 transformers:
 - test/pub_serve:
