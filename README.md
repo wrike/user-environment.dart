@@ -1,4 +1,4 @@
-[travis build](https://travis-ci.org/wrike/user-environment.dart.svg?branch=deploy)
+![travis build](https://travis-ci.org/wrike/user-environment.dart.svg?branch=deploy)
 ## User Environment
 This package allows to detect the platform and the browser version used to view a web page.
 
