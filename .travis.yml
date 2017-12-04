@@ -1,16 +1,22 @@
 language: dart
 sudo: false
-dart:
-  - dev
-dart_task:
-  - test: --platform vm
-  - test: --platform dartium
-	install_dartium: true
-  - dartanalyzer: --strong --fatal-warnings
-  #- dartfmt
+matrix:
+  include:
+	- dart: dev
+	  dart_task:
+		- test: --platform vm
+		- test: --platform dartium
+		  install_dartium: true
+		- dartanalyzer: --strong --fatal-warnings
+	- dart: stable
+	  dart_task:
+		- test: --platform vm
+		- test: --platform dartium
+		  install_dartium: true
+		- dartanalyzer: --strong --fatal-warnings
 
 #branches:
 #  only: [master]
-#cache:
-#  directories:
-#    - $HOME/.pub-cache
+cache:
+  directories:
+    - $HOME/.pub-cache
