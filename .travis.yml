@@ -7,7 +7,9 @@ dart_task:
 - test: --platform vm
 - test: --platform dartium
   install_dartium: true
-#- dartfmt
+script:
+- pub run dart_dev coverage --no-html
+- bash <(curl -s https://codecov.io/bash) -f coverage/coverage.lcov
 
 branches:
   only:
